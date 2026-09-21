@@ -6,17 +6,18 @@ stages:
   - init
   - plan
   - apply
-job_init:
+init:
   stage: init 
   script:
     - terraform init 
 
-job_plan:
+plan:
   stage: plan
   script:
+  - terraform init
   - terraform plan
 
-job_apply:
+apply:
   stage: apply
   script:
   - terraform apply
