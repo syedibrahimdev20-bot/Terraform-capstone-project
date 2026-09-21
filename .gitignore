@@ -1,0 +1,8 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Sensitive Terraform variables
+*.tfvars
+*.tfvars.json

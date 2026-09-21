@@ -1,0 +1,25 @@
+image:
+  name: hashicorp/terraform:latest
+  entrypoint: [""]
+
+stages:
+  - init
+  - plan
+  - apply
+job_init:
+  stage: init 
+  script:
+    - terraform_init 
+
+job_plan:
+  stage: plan
+  script:
+  - terraform_plan
+
+job_apply:
+  stage: apply
+  script:
+  - terraform_apply
+  when: manual
+
+
