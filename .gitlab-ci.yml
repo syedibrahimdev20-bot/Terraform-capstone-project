@@ -20,7 +20,8 @@ plan:
 apply:
   stage: apply
   script:
-  - terraform apply
+  - terraform init
+  - terraform apply -auto-approve
   when: manual
 
 
