@@ -8,5 +8,5 @@ availability_zone = "us-east-1a"
 
 instance_type = "t3.micro"
 
-bucket_name = "syed-capstn-s3-bucket"
+bucket_name = "ibrahim-s3-cpstn-bucket"
 
