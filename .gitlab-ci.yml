@@ -6,6 +6,8 @@ stages:
   - init
   - plan
   - apply
+  - destroy
+
 init:
   stage: init 
   script:
@@ -24,4 +26,8 @@ apply:
   - terraform apply -auto-approve
   when: manual
 
-
+destroy:
+  stage: destroy
+  script:
+   - terraform destroy -auto-approve
+  when: manual
