@@ -29,5 +29,6 @@ apply:
 destroy:
   stage: destroy
   script:
+   - terraform init
    - terraform destroy -auto-approve
   when: manual
