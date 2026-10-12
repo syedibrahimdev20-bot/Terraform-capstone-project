@@ -1,8 +1,8 @@
-resource "aws_s3_bucket" "bucket" {
+resource "aws_s3_bucket" "aws-s3" {
   bucket = var.bucket_name
 
-  tags = {
-    Name = "Demo-Bucket"
-  }
+  # tags = {
+  #   Name = "Demo-Bucket"
+  # }
 }
 
