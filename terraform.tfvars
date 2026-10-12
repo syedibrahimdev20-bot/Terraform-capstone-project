@@ -8,5 +8,5 @@ availability_zone = "ap-south-1a"
 
 instance_type = "t3.micro"
 
-bucket_name = "terraform-bucket-cpstn-project-2026"
+bucket_name = "capstone-bucket-project-26"
 
