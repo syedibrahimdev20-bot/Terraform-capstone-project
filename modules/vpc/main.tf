@@ -6,7 +6,7 @@ resource "aws_vpc" "main" {
   }
 }
 
-resource "aws_internet_gateway" "igw" {
+resource "aws_internet_gateway" "igw-cpstn" {
   vpc_id = aws_vpc.main.id
 
   tags = {
